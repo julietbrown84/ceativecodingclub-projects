@@ -1,4 +1,4 @@
-# creativecodingclub-projects
+# creative coding club projects
 
 Part of the creative coding club. 
 
