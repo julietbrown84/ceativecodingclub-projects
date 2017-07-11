@@ -1,0 +1,79 @@
+body {
+  background: #333; 
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  font-family: 'EB Garamond', serif;
+  line-height: 1.4;
+  padding: 10px;
+}
+
+main {
+  display: flex;
+  width: 920px; /* not responsive - just use exact pixel width */
+  margin: 0 auto; /* center it */
+}
+
+.plant-drawer {
+  width: 40%;
+  background: #DCEDC8; /* light green background */
+  margin-right: 10px;
+   display: flex; /* add flexbox */
+  flex-wrap: wrap; /* ensure the items inside wrap */
+  padding: 20px 0; /* add padding */
+}
+
+.plant-drawer div {
+  text-align: center; /* center the div content */
+  width: 50%; /* make them 50% width */
+  border-radius: 50%;
+  background: #fff;
+  background-position: bottom;
+  min-height: 120px;
+  position: relative; /* because imgs inside will be absolute */
+}
+
+
+.terrarium-container {
+  width: 60%;
+  background: #fff;
+  display: none;
+}
+
+.succulent {
+  position: absolute; 
+  bottom: 3px;
+  max-height: 80%;
+  max-width: 90%;
+  opacity: 0.7;
+  left: 50%;
+  transform: translateX(-50%); /* centering hack */
+}
+
+.succulent:hover {
+  cursor: grab;
+  opacity: 1;
+}
+
+.plant-drawer div.tall {
+  height: 230px;
+}
+
+.plant-drawer div.small .succulent {
+  width: 50%;
+}
+
+.plant-drawer {
+  padding: 20px 0;
+  width: 40%;
+  background: #DCEDC8;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative; /* relative position on the parent */
+}
+
+.plant-drawer p {
+  position: absolute;
+  left: 105%;
+  width: 200px;
+}

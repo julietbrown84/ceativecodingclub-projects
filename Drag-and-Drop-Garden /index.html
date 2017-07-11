@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+  <link rel='stylesheet' type='text/css' href='index.css'>
+  <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script type='text/javascript' src='./javascripts/index.js'></script>
+</head>
+
+<body>
+	<main>
+	  <!-- Plant Drawer -->
+		<section class="plant-drawer">
+	    <div class="small">
+	      <img class="succulent original" src="succulents/succulent-agave.svg" alt="agave succulent">
+	    </div>
+	    <div class="small">
+	      <img class="succulent original" src="succulents/succulent-barrel-cactus.svg" alt="barrel cactus">
+	    </div>
+	    <div>
+	      <img class="succulent original" src="succulents/succulent-purple-agave.svg" alt="purple agave succulent">
+	    </div>
+	    <div>
+	      <img class="succulent original" src="succulents/succulent-cacti.svg" alt="three cacti grouped together">
+	    </div>
+	    <div class="tall">
+	      <img class="succulent original" src="succulents/succulent-purslane.svg" alt="purslane succulent">
+	    </div>
+	    <div class="tall">
+	      <img class="succulent original" src="succulents/succulent-snakeplant.svg" alt="snake plant succulent with two flowers">
+	    </div>
+	    <div>
+	      <img class="succulent original" src="succulents/succulent-gnome.svg" alt="a little gnome">
+	    </div>
+	    <div>
+	      <img class="succulent original" src="succulents/succulent-gemstone.svg" alt="decorative purple crystal">
+	    </div>
+	      <!-- Prompt the user -->
+    	<p>drag the plants into your terrarium</p>
+	  </section>
+	  <!-- Terrarium Container -->
+	  <section class="terrarium-container">
+	    <div class="terr-wrap start">
+	      <img class="soil" src="terrariums/terrarium-bottle-soil.svg" alt="Bottle-shaped terrarium soil" />
+	      <img class="frame" src="terrariums/terrarium-bottle-frame.svg" alt="Bottle-shaped terrarium outline" />
+	    </div>
+	    <div class="terr-wrap start">
+	      <img class="soil" src="terrariums/terrarium-house-soil.svg" alt="House-shaped terrarium soil" />
+	      <img class="frame" src="terrariums/terrarium-house-frame.svg" alt="House-shaped terrarium outline" />
+	    </div>
+	    <div class="terr-wrap start">
+	      <img class="soil" src="terrariums/terrarium-dome-soil.svg" alt="Dome-shaped terrarium soil" />
+	      <img class="frame" src="terrariums/terrarium-dome-frame.svg" alt="Dome-shaped terrarium outline" />
+	    </div>
+	    <div class="terr-wrap start">
+	      <img class="soil" src="terrariums/terrarium-bowl-soil.svg" alt="Bowl-shaped terrarium soil" />
+	      <img class="frame" src="terrariums/terrarium-bowl-frame.svg" alt="Bowl-shaped terrarium outline" />
+	    </div>
+	    <div class="terr-wrap start">
+	      <img class="soil" src="terrariums/terrarium-geo-soil.svg" alt="Geometric terrarium soil" />
+	      <img class="frame" src="terrariums/terrarium-geo-frame.svg" alt="Geometric terrarium outline" />
+	    </div>
+	      <!-- Prompt the user -->
+    	<p>choose your terrarium</p>
+	  </section>
+
+	    <!-- Context menu with options to increase/decrease succulent size and re-order -->
+	    <div class="context-menu">
+	      <a id="forwards"><i class="fa fa-arrow-up"></i></a>
+	      <a id="backwards"><i class="fa fa-arrow-down"></i></a>
+	      <a id="grow"><i class="fa fa-plus"></i></a>
+	      <a id="shrink"><i class="fa fa-minus"></i></a>
+	      <a id="trash"><i class="fa fa-trash"></i></a>
+	      <!-- thumbnail of succulent so user knows which one is selected -->
+	      <div class="thumb"></div>
+	    </div>
+
+	      <!-- Buttons to clear and start new terrarium -->
+	    <div class="button-wrap">
+	      <a class="button clear">clear</a>
+	      <a class="button new">new terrarium</a>
+	    </div>
+	</main>
+</body>
+
+<!-- Plant Drawer -->
